@@ -1,0 +1,5 @@
+node_modules/
+.yarnrc
+
+# IntellijIdea files
+.idea/
