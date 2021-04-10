@@ -61,3 +61,24 @@
     margin-top: 0;
   }
 }
+
+.panel {
+  border: none;
+  background-color: darken($color-light, 8%);
+  margin-bottom: $gap * 2;
+
+  &-info{
+    .panel-heading {
+      border: none;
+      background-color: $color-accent;
+      color: $color-light;
+      font-size: 1.2rem;
+      letter-spacing: 0.1em;
+    }
+  }
+
+  &-body {
+    border: 1px solid $color-gray;
+    border-radius: 0 0 4px 4px;
+  }
+}
