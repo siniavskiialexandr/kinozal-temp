@@ -1,9 +1,32 @@
 .main{
-  margin-bottom: $gap * 5.3333333;
+  @extend %margin-bottom-lg;
+
+  .user-login {
+    margin-bottom: $gap *3;
+  }
+
+  .site-search {
+    margin-bottom: $gap *4;
+  }
 }
 
-//TODO: потом переделать на классы
+.new-films {
+  &-title {
+      margin-top: -5px;
+  }
+  &-row{
+    margin-left: -$gap / 2;
+    margin-right: -$gap / 2;
+  }
+  &-item {
+    padding-left: $gap / 2;
+    padding-right: $gap / 2;
+    margin-bottom: $gap;
 
-h1{
-  margin-top: 0;
+    &__thumbnail {
+      margin-bottom: 0;
+    }
+  }
 }
+
+

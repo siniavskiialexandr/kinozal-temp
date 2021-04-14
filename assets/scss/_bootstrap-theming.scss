@@ -82,3 +82,30 @@
     border-radius: 0 0 4px 4px;
   }
 }
+
+.input {
+  &-lg,
+  &-group-lg > .form-control {
+    font-size: 0.875rem;
+  }
+}
+
+.nav-tabs {
+  margin-bottom: 15px;
+
+
+  > li {
+    > a {
+      border-color: $color-gray;
+    }
+    &.active > a,
+    &.active > a:focus,
+    &.active > a:hover{
+      background-color: darken(#ffffff, 3%);
+    }
+  }
+}
+
+.thumbnail {
+  transition: background-color 0.25s;
+}
