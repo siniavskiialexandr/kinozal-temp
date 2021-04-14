@@ -69,11 +69,13 @@
 
   &-info{
     .panel-heading {
+      letter-spacing: 0.1em;
+
+      color: $color-light;
       border: none;
       background-color: $color-accent;
-      color: $color-light;
+
       font-size: 1.2rem;
-      letter-spacing: 0.1em;
     }
   }
 
@@ -90,21 +92,21 @@
   }
 }
 
-.nav-tabs {
-  margin-bottom: 15px;
-
-
-  > li {
-    > a {
-      border-color: $color-gray;
-    }
-    &.active > a,
-    &.active > a:focus,
-    &.active > a:hover{
-      background-color: darken(#ffffff, 3%);
-    }
-  }
-}
+//.nav-tabs {
+//  margin-bottom: 15px;
+//
+//
+//  > li {
+//    > a {
+//      border-color: $color-gray;
+//    }
+//    &.active > a,
+//    &.active > a:focus,
+//    &.active > a:hover{
+//      background-color: darken(#ffffff, 3%);
+//    }
+//  }
+//}
 
 .thumbnail {
   transition: background-color 0.25s;

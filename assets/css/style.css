@@ -45,11 +45,11 @@
 }
 
 .panel-info .panel-heading {
+  letter-spacing: 0.1em;
+  color: #ffffff;
   border: none;
   background-color: #df8a13;
-  color: #ffffff;
   font-size: 1.2rem;
-  letter-spacing: 0.1em;
 }
 
 .panel-body {
@@ -60,20 +60,6 @@
 .input-lg,
 .input-group-lg > .form-control {
   font-size: 0.875rem;
-}
-
-.nav-tabs {
-  margin-bottom: 15px;
-}
-
-.nav-tabs > li > a {
-  border-color: #dddddd;
-}
-
-.nav-tabs > li.active > a,
-.nav-tabs > li.active > a:focus,
-.nav-tabs > li.active > a:hover {
-  background-color: #f7f7f7;
 }
 
 .thumbnail {
@@ -164,6 +150,29 @@ a:hover, a:focus {
 
 .vertical-slider img {
   width: 100%;
+}
+
+.user-login {
+  position: relative;
+}
+
+.user-login__tabs {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  margin-right: -5px;
+  border: none;
+}
+
+.user-login__tabs a {
+  padding: 14px 5px 11px !important;
+  color: #dddddd;
+  border: none !important;
+  background-color: transparent !important;
+}
+
+.user-login__tabs .active a {
+  color: #ffffff !important;
 }
 
 .site-news-item {
