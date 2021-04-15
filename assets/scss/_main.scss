@@ -1,22 +1,24 @@
 .main{
   @extend %margin-bottom-lg;
 
-  .user-login {
-    margin-bottom: $gap *3;
+  .site-search {
+    margin-bottom: $gap * 3;
   }
 
-  .site-search {
-    margin-bottom: $gap *4;
+  .user-login {
+    margin-bottom: $gap * 4;
   }
 }
 
 .new-films {
-  &-title {
-      margin-top: -5px;
-  }
+  //&-title {
+  //    margin-top: -5px;
+  //}
   &-row{
     margin-left: -$gap / 2;
+    margin-bottom: -$gap;
     margin-right: -$gap / 2;
+
   }
   &-item {
     padding-left: $gap / 2;
@@ -25,6 +27,35 @@
 
     &__thumbnail {
       margin-bottom: 0;
+
+      transition: background-color 0.25s;
+    }
+
+    &__image {
+      width: 100%;
+    }
+
+    &__title {
+      margin: 0;
+
+      font-size: 1rem;
+      font-weight: bold;
+
+      @include text-shortener;
+    }
+    &__caption {
+      text-align: center;
+    }
+
+    &:hover {
+      .thumbnail {
+        border-color: $color-accent;
+        background-color: $color-accent;
+      }
+
+      h3{
+        color: $color-light;
+      }
     }
   }
 }

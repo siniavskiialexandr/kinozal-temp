@@ -90,6 +90,23 @@ a:hover, a:focus {
   color: #df8a13;
 }
 
+h1 {
+  font-family: "PT Serif", serif;
+}
+
+h1::after {
+  position: absolute;
+  width: 100%;
+  margin: 0.85em 0 0 15px;
+  content: "";
+  border-bottom: 3px solid rgba(240, 173, 79, 0.7);
+}
+
+section {
+  position: relative;
+  overflow: hidden;
+}
+
 .header-logo {
   padding: 100px 0;
   text-align: center;
@@ -112,20 +129,17 @@ a:hover, a:focus {
   letter-spacing: 0.2em;
 }
 
-.main .user-login {
+.main .site-search {
   margin-bottom: 45px;
 }
 
-.main .site-search {
+.main .user-login {
   margin-bottom: 60px;
-}
-
-.new-films-title {
-  margin-top: -5px;
 }
 
 .new-films-row {
   margin-left: -7.5px;
+  margin-bottom: -15px;
   margin-right: -7.5px;
 }
 
@@ -137,6 +151,37 @@ a:hover, a:focus {
 
 .new-films-item__thumbnail {
   margin-bottom: 0;
+  -webkit-transition: background-color 0.25s;
+  -o-transition: background-color 0.25s;
+  transition: background-color 0.25s;
+}
+
+.new-films-item__image {
+  width: 100%;
+}
+
+.new-films-item__title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: bold;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+}
+
+.new-films-item__caption {
+  text-align: center;
+}
+
+.new-films-item:hover .thumbnail {
+  border-color: #df8a13;
+  background-color: #df8a13;
+}
+
+.new-films-item:hover h3 {
+  color: #ffffff;
 }
 
 .left-sidebar .panel:last-of-type {
@@ -178,11 +223,14 @@ a:hover, a:focus {
 .site-news-item {
   clear: both;
   position: relative;
+}
+
+.site-news-item:not(:last-child) {
   margin-bottom: 15px;
   min-height: 85px;
 }
 
-.site-news-item::after {
+.site-news-item:not(:last-child)::after {
   content: "";
   position: absolute;
   height: 1px;
@@ -274,6 +322,10 @@ a:hover, a:focus {
 }
 
 @media (min-width: 576px) {
+  h1 {
+    margin: -7.5px 0 45px;
+    font-size: 3rem;
+  }
   .header-logo__title {
     font-size: 3.5rem;
     letter-spacing: 0.33em;
@@ -305,6 +357,10 @@ a:hover, a:focus {
 }
 
 @media (max-width: 575.8px) {
+  h1 {
+    margin: 0 0 30px;
+    font-size: 2rem;
+  }
   .header-logo__title {
     font-size: 2.5rem;
     letter-spacing: 0.2em;

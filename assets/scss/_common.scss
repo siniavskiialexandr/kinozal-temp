@@ -16,3 +16,54 @@ a{
     color: $color-accent;
   }
 }
+h1 {
+  font-family: $font-header;
+
+  @include xs-min {
+    margin: (-$gap / 2) 0 ($gap * 3);
+    font-size: 3rem;
+  }
+  @include xs {
+    margin: 0 0 ($gap * 2);
+    font-size: 2rem;
+  }
+
+  &::after {
+    position: absolute;
+
+    width: 100%;
+    margin: 0.85em 0 0 $gap;
+
+    content: "";
+
+    border-bottom: 3px solid rgba(lighten($color-accent, 15%), 0.7);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section {
+  position: relative;
+
+  overflow: hidden;
+}
