@@ -1,0 +1,20 @@
+.film-info {
+  font-size: 1.2em;
+
+  &__wrapper {
+    white-spase: nowrap;
+
+    &:not(:last-of-type) {
+      margin-right: $gap;
+    }
+  }
+
+  &__badge {
+    font-size: 0.8em;
+  }
+
+  &__well {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+}
