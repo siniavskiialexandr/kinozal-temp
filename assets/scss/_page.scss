@@ -18,3 +18,9 @@
     border-top-right-radius: 0;
   }
 }
+
+.film-comment-form {
+  &__button {
+    float: right;
+  }
+}
