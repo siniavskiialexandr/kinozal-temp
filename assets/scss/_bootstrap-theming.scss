@@ -1,10 +1,10 @@
 .navbar-inverse {
-  background-color: darken($color-dark, 4%);
   margin: 0;
 
+  border-color: transparent;
+  background-color: darken($color-dark, 4%);
+
   .navbar-nav {
-
-
     > .active > a,{
       background-color: $color-primary-dark;
 
@@ -84,7 +84,7 @@
     border-radius: 0 0 4px 4px;
   }
 }
-
+.btn-lg,
 .input {
   &-lg,
   &-group-lg > .form-control {
